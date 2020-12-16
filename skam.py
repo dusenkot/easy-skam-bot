@@ -1,7 +1,7 @@
 import telebot  # библиотеки
 from telebot import types
 
-bot = telebot.TeleBot('1074545272:AAF6f7JQYe7LB_SNUPF_LQ9NTrXheOIQ0eE')  # токен
+bot = telebot.TeleBot('')  # токен
 
 
 @bot.message_handler(commands=['start'])  # 1блок
@@ -53,6 +53,6 @@ def cilkicst(message):
 def gigga(message):
     if message.text == '1гр-200грн' or message.text == '1гр-210грн' or message.text == '1гр-220грн' or message.text == '2гр-420грн' or message.text == '2гр-380грн' or message.text == '2гр-400грн':
         markup6 = types.ReplyKeyboardRemove()
-        bot.send_message(message.chat.id,'Оплата EasyPay: 68038396. Скриншот оплаты отправляем оператору @uastaff_oper и получаем адрес клада.', reply_markup=markup6)
+        bot.send_message(message.chat.id,'Оплата EasyPay: . Скриншот оплаты отправляем оператору и получаем адрес клада.', reply_markup=markup6)
 
 bot.polling(none_stop=True)  # run
